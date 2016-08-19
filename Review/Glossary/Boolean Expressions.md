@@ -22,7 +22,7 @@ and the entire expression is true.
     <td style="width:50%;">
 <img src="https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Review/Glossary/images/venn-and.png?raw=true" title="A&&B&&C">
     </td>
-    
+</tr><tr>
     <td style="width:50%;">
 <img src="https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Review/Glossary/images/venn-or.png?raw=true" title="A||B||C">
     </td>
