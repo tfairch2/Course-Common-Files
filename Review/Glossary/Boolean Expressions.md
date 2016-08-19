@@ -18,8 +18,15 @@ and the entire expression is true.
 **The entire expression is only false if every sub-expression is false.**
 
 <table>
-<tr><td>a</td>
-<td>b</td></tr>
+<tr>
+    <td>
+    ![A&&B&&C](https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Review/Glossary/images/venn-and.png?raw=true)
+    </td>
+    
+    <td>
+    ![A||B||C](https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Review/Glossary/images/venn-or.png?raw=true)
+    </td>
+</tr>
 </table>
 
 The not operator ! will inverse an expression's logic. If something returns false, then !(something) will return true, and vice versa.
