@@ -1,0 +1,13 @@
+<p>Read the following article by Martin Fowler, an author of software design books, and founder of ThoughtWorks, then write a response based on the questions below.</p>
+<p></p>
+<p><span style="text-decoration: underline;"><strong>Article</strong></span></p>
+<p><a rel="noopener" href="http://www.martinfowler.com/bliki/DiversityImbalance.html" target="_blank">DiversityImbalance</a></p>
+<p></p>
+<p><span style="text-decoration: underline;"><strong>Questions</strong></span></p>
+<ol>
+<li>Had you thought about the issue of diversity in tech prior to reading this post?</li>
+<li>Were there any reasons that you believed for the lack of diversity in tech that were affected after you read this article? How did your opinions change?</li>
+<li>Do you have any arguments <em>against</em> what was stated in the post? What are they?</li>
+<li>How do you think the problem solving ability of a software development team is affected if they have a diverse team of people?</li>
+</ol>
+<p></p>

@@ -1,0 +1,8 @@
+Read through the attacked Problem Solving Strategies document.
+
+In a text editor, answer the following questions, and upload them to the Dropbox:
+
+    What did you learn from this reading that you did not know or think about before?
+    Why is it important to build and test often?
+    Why should you only work on one feature at a time?
+    Which strategy do you think is something you need to improve upon the most?
