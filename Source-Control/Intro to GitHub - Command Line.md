@@ -86,3 +86,25 @@ on several machines, you might need to pull the latest changes. You can do this 
 
 	git pull
 	
+## Standard usage
+
+### 1. You've made some changes and want to upload them to the server:
+
+	git add .
+	git commit -m "description"
+	git push -u origin master
+	
+Note that you can make multiple commits first, and then push them all
+to the server at the same time.
+	
+### 2. Pulling down changes
+
+Before you pull changes from the repository, you should commit any pending changes.
+
+	git add .
+	git commit -m "wip changes"
+	git pull
+	
+then, it may merge the changes
+
+
