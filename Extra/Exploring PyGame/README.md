@@ -65,3 +65,78 @@ on the screen. In your *main.py* file, you will add the code:
 	# TEMPORARY: Pause the program
 	time.sleep( 2 )
 
+With this code, it's time to try to test it out to make sure that
+you have PyGame set up correctly.
+
+In Windows: 
+
+(WIP)
+
+## Drawing shapes and colors
+
+Next, let's draw some shapes to the screen.
+
+Before the end of the program (before the time.sleep), add the following:
+
+	window.fill( pygame.Color( 255, 100, 100 ) )
+	pygame.display.update()
+
+This will fill the background with a pinkish color.
+
+Any time we make updates to the screen, we need to call the **pygame.display.update()** function.
+Once we have a game loop working, we will call pygame.display.update() at
+the end of each cycle.
+
+Test out the code above, make sure it works, then add some shapes:
+
+	# Draw circle. Pass in: window, color, (x,y), radius, thickness
+	# x = 100, y = 150, radius = 50, thickness = 5
+	pygame.draw.circle( window, pygame.Color( 255, 0, 0 ), ( 100, 150 ), 50, 5 )
+	
+	# Draw filled-in rectangle. Pass in: window, color, (x1, y1, x2, y2)
+	pygame.draw.rect( window, pygame.Color( 0, 255, 0 ), ( 200, 225, 250, 275 ) )
+
+	# Draw line. Pass in: window, color, (x1, y1), (x2, y2), thickness
+	pygame.draw.line( window, pygame.Color( 0, 0, 255 ), ( 300, 400 ), ( 430, 400 ), 4 )
+
+![Screenshot](images/py2.png)
+
+<details>
+	<summary><strong>
+		**View full program code**
+	</strong></summary>
+
+	import pygame, sys 			#import pygame	
+	from pygame.locals import * # const values like QUIT, MOUSEMOTION
+	import time
+
+	# Initialize pygame
+	pygame.init()
+
+	# Make a window whose width is 640 pixels and height is 480 pixels
+	window = pygame.display.set_mode( ( 640, 480 ) )
+
+	# Set the text at the top of the window
+	pygame.display.set_caption( "Pickin' Sticks" )
+
+	window.fill( pygame.Color( 255, 100, 100 ) )
+
+	# Draw circle. Pass in: window, color, (x,y), radius, thickness
+	# x = 100, y = 150, radius = 50, thickness = 5
+	pygame.draw.circle( window, pygame.Color( 255, 0, 0 ), ( 100, 150 ), 50, 5 )
+
+	# Draw filled-in rectangle. Pass in: window, color, (x1, y1, x2, y2)
+	pygame.draw.rect( window, pygame.Color( 0, 255, 0 ), ( 200, 225, 250, 275 ) )
+
+	# Draw line. Pass in: window, color, (x1, y1), (x2, y2), thickness
+	pygame.draw.line( window, pygame.Color( 0, 0, 255 ), ( 300, 400 ), ( 430, 400 ), 4 )
+
+	pygame.display.update()
+
+	# TEMPORARY: Pause the program
+	time.sleep( 2 )
+
+</details>
+
+
+
