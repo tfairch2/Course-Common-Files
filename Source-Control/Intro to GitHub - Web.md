@@ -59,7 +59,7 @@ Next, there will be a "Choose a plan" section. Just select the **free** plan.
 After you're done registering, you can go to **github.com/YOUR_USER_NAME**
 to create new repositories and view existing repositories.
 
-For example, my home repository is [https://github.com/racheljmorris](https://github.com/racheljmorris).
+For example, my home profile is [https://github.com/racheljmorris](https://github.com/racheljmorris).
 
 
 ### 2. Create a repository
