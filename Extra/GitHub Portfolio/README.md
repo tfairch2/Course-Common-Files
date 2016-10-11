@@ -160,3 +160,97 @@ GitHub also has a system in place for hosting simple webpages, both for
 
 We're going to build a portfolio, so we will just make one for your
 entire profile.
+
+## Create a repository for your portfolio
+
+To have a page for your profile, you need to create a new repository
+and name it:
+	
+	USERNAME.github.io
+	
+but replace "USERNAME" with your GitHub username.
+
+![Portfolio repo](images/portfoliorepo.png)
+
+## Generate a webpage
+
+Once created, go to the repository **Settings**.
+
+![Settings](images/settings.png)
+
+Scroll down until you get to the **GitHub Pages** section of the settings.
+
+Click on the **Launch automatic page generator** button.
+
+It will bring up an editor that allows you to set the page name and
+basic content, though you can edit these later.
+
+At least give it a Page name and tagline, then hit **Continue to layouts**.
+Clear out the placeholder text, and add some simple text like this:
+
+	# Header 1
+	
+	## Header 2
+	
+	This is some text
+	
+	Yay, text!
+
+![New site](images/newsite.png)
+
+On the next page, you can preview different layouts for the page.
+Click through them and see what you like, then click **Publish page**.
+
+![Layouts](images/layouts.png)
+
+After publishing, your page should be visible at the URL you've selected
+(the repository name) - it might take a few minutes for the webpage to update, though.
+
+## Edit the webpage
+
+You can view the webpage's HTML through GitHub if you select the **index.html** page:
+
+![Preview](images/view.png)
+
+and if you click on the edit icon you can make changes:
+
+![Edit icon](images/edit.png)
+
+If you don't know any HTML, it's OK - we added that placeholder text so you
+can view and modify it.
+
+You can also go through the generator again to make edits to the webpage
+using **markdown** - that type of text where # meant "level 1 header" and such.
+
+## What should you put on a portfolio?
+
+When applying for jobs, scholarships, or other things where someone might be
+interested in what you've done in the past, it can be good to have a portfolio
+to send them to.
+
+Here's what I would put in one:
+
+* Introduction
+	* What's your name
+	* What area are you in (geographically?)
+	* What are you interested in?
+	
+* Contact information
+	* Email address
+	* LinkedIn link
+	
+* Projects
+	* Title
+	* Description
+	* Tools used
+	* Screenshot(s)
+	* Download(s)
+	
+For reference, you can check out [this example portfolio page](https://racheljmorris.github.io/)
+
+---
+
+# See Also
+
+* [GitHub Pages](https://pages.github.com/)
+* [GitHub Pages Basics - User, Organization, and Project Pages](https://help.github.com/articles/user-organization-and-project-pages/)
