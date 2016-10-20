@@ -16,11 +16,12 @@ What to write programs about?
 * File searcher - Write a program to search a text file for specific words, returns information like line number and the line it was found on.
 * File system mapper - Use a recursive function to go through all the folders in a directory and build a text file with a list of those directories.
 * Text editor or text reader - Write a program that reads text files and displays them to the screen. Implement pagination to make it a more accessible text reader. Could implement bookmarks and such.
+* Picture filters - Use the PPM image format to write programs that will apply "filters" to images. ([CS 250 Lab](https://github.com/Rachels-Courses/CS250-Data-Structures/tree/master/Assignments/Lab%2004%20-%20STL%20List))
 
 ## Apps
 
 * To-Do list - Have user keep a to-do list on their computer with a schedule, allow exporting the schedule to CSV file.
-* Recipe - Allow user to store recipes, can type in a batch (ratio) to adjust the ingredient list. ([CS 200 Lab](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Assignments/In-class%20Labs/Lab%202%20-%20Recipe%20(Variables%2C%20conditionals%2C%20input%2C%20and%20output).md))
+* Recipe - Allow user to store recipes, can type in a batch (ratio) to adjust the ingredient list. ([CS 200 Lab](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Assignments/In-class%20Labs/Lab%202%20-%20Recipe%20(Variables%2C%20conditionals%2C%20input%2C%20and%20output).md), [CS 134 Assignment](https://github.com/Rachels-Courses/CS134-Programming-Fundamentals/blob/master/Assignments/Programming%20Assignments/PA4%20Java%20Input%20and%20Output.md))
 * Card game - Implement a simple card game with boring-person cards (whatever the normal 52 card thing is called), or make a new card game (like MTG or Pokemon),
 and write a program to implement the turns so two people can play.
 * Quizzer - Use Polymorphism to store an array of Questions of different types (multiple choice, true-false, fill in the blank, etc.),
@@ -33,7 +34,7 @@ allow user to edit and save a question deck, and then run the quiz.
 
 ## Calculations
 
-* Quadratic Formula - Calculate roots of a polynomial
+* Quadratic Formula - Calculate roots of a polynomial ([CS 134 Lab](https://github.com/Rachels-Courses/CS134-Programming-Fundamentals/blob/master/Assignments/Java%20Labs/Java%20Lab%201%20-%20Math%20Programs.md))
 * Square feet - Calculate the total square footage of a building, adding each room's dimensions
 * Physics - For some acceleration, initial velocity, and initial position, calculate an item's position over time.
 * Fractions - Write a Fraction class and overload math operators to handle fraction math.
