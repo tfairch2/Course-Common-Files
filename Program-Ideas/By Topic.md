@@ -17,6 +17,7 @@ What to write programs about?
 * File system mapper - Use a recursive function to go through all the folders in a directory and build a text file with a list of those directories.
 * Text editor or text reader - Write a program that reads text files and displays them to the screen. Implement pagination to make it a more accessible text reader. Could implement bookmarks and such.
 * Picture filters - Use the PPM image format to write programs that will apply "filters" to images. ([CS 250 Lab](https://github.com/Rachels-Courses/CS250-Data-Structures/tree/master/Assignments/Lab%2004%20-%20STL%20List))
+* Blogger app - Create a blogging system, including Users, Posts, and Likes. Save/load blog posts and user data in text files.
 
 ## Apps
 
@@ -26,11 +27,14 @@ What to write programs about?
 and write a program to implement the turns so two people can play.
 * Quizzer - Use Polymorphism to store an array of Questions of different types (multiple choice, true-false, fill in the blank, etc.),
 allow user to edit and save a question deck, and then run the quiz.
+* Calorie counter - Create a program that stores a list of food items and their calories, then allow user to build their meals (example, tacos or sandwiches or pizza) and come up with the total calories.
+* Translation dictionary - Keep a file of English - (other language) terms and allow the user to do searches to find translations for certain words.
 
 ## Games
 
 * Text adventure like Zork - Create an array of rooms, each room can have a neighbor to the North, South, East, or West. You can implement this via an array or via pointers. Can also implement an inventory system, or a door-and-key system. ([CS 200 Lab](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Assignments/In-class%20Labs/Lab%206%20-%20Text%20Adventure%20(Strings%2C%20arrays%2C%20for-loops%2C%20random%20numbers).md))
 * RPG Battle - Implement a turn-based RPG battle type system. Each turn, you can attack, heal, use an item, etc. ([CS 200 Assignment](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/tree/master/Assignments/Programs/PA2%20-%20RPG%20Battle))
+* ASCII Maze - Draw a room to the screen using text symbols. Allow the user to move around to navigate to an exit. ([Example program](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Example%20Code/Other/Trezoro/main.cpp))
 
 ## Calculations
 
