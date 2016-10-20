@@ -33,9 +33,15 @@
 
 ## For Loops
 
+For-loops are good for iterating through arrays, counting numbers, or even doing something in a grid format.
+
 * Cards - Use nested for-loops to generate a deck of standard playing cards. (+Arrays)
+* Calendar - Generate months, weeks, and days of a year.
+* Averages - Use a for-loop to average together some data.
 
 ## Arrays
+
+* RPG Battle - Create an array of HPs for each player, and you have to choose who to attack. NPCs randomly choose the index of the player to attack on their turn.
 
 ## Strings
 
