@@ -1,0 +1,12 @@
+#Greenfoot properties
+#Thu Jul 21 18:57:55 CDT 2016
+mainWindow.width=850
+class.Tile.superclass=greenfoot.Actor
+class.MyWorld.superclass=greenfoot.World
+version=2.8.0
+project.charset=UTF-8
+class.Tile.image=grass.png
+world.lastInstantiated=MyWorld
+mainWindow.y=40
+mainWindow.x=40
+mainWindow.height=600

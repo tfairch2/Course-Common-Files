@@ -1,0 +1,4 @@
+PlayerX
+335
+PlayerY
+85
