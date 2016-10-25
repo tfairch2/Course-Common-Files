@@ -1,0 +1,10 @@
+activity = raw_input( "Enter an activity: " )
+relationship = raw_input( "Enter an inter-personal relationship: " )
+
+print( "" )
+print( "SAFETY " + activity + " - MEN WITHOUT HATS" )
+print( "We can " + activity + " if we want to."  )
+print( "We can leave your " + relationship + " behind."  )
+print( "'Cuz your " + relationship + " don't " + activity + ","  )
+print( "and if they don't " + activity + ","  )
+print( "well they're no " + relationship + " of mine."  )

@@ -1,0 +1,6 @@
+print( "THE PRINCESS AND THE PEA by Hans Christian Andersen" )
+print( "Once upon a time there was a prince who wanted to marry a princess; but she would have to be a real princess." )
+print( "He travelled all over the world to find one, but nowhere could he get what he wanted." )
+print( "There were princesses enough, but it was difficult to find out whether they were real ones." )
+print( "There was always something about them that was not as it should be." )
+print( "So he came home again and was sad, for he would have liked very much to have a real princess. " )

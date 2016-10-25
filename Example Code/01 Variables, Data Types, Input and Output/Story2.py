@@ -1,0 +1,10 @@
+job1 = raw_input( "Enter a job or role: " )
+job2 = raw_input( "Enter another job or role: " )
+adjective = raw_input( "Enter an adjective: " )
+
+print( "THE PRINCESS AND THE PEA by Hans Christian Andersen" )
+print( "Once upon a time there was a " + job1 + " who wanted to marry a " + job2 + "; but she would have to be a " + adjective + " " + job2 + "." )
+print( "He travelled all over the world to find one, but nowhere could he get what he wanted." )
+print( "There were " + job2 + "s enough, but it was difficult to find out whether they were " + adjective + " ones." )
+print( "There was always something about them that was not as it should be." )
+print( "So he came home again and was sad, for he would have liked very much to have a " + adjective + " " + job2 + ". " )

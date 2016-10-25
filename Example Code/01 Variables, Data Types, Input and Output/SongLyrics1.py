@@ -1,0 +1,6 @@
+print( "SAFETY DANCE - MEN WITHOUT HATS" )
+print( "We can dance if we want to."  )
+print( "We can leave your friends behind."  )
+print( "'Cuz your friends don't dance,"  )
+print( "and if they don't dance,"  )
+print( "well they're no friends of mine."  )
