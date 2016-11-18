@@ -1,5 +1,9 @@
 # Text Output - Example Programs
 
+PRograms that only display text to the screen
+
+---
+
 ## Cookie Recipe Version 1
 
 This program only displays contents of a recipe to the screen.
