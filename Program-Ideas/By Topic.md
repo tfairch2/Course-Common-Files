@@ -47,6 +47,13 @@ allow user to edit and save a question deck, and then run the quiz.
 * Binary Math
 * Derivatives and Integrals (note to self: find my old numerical analysis textbook)
 
+### Discrete Math
+
+* Generate truth tables
+* Generate proposition results
+* Generate power sets
+* Solve summations
+
 
 ## Language/Conversions
 
