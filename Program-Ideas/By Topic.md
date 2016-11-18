@@ -44,6 +44,16 @@ allow user to edit and save a question deck, and then run the quiz.
 * Fractions - Write a Fraction class and overload math operators to handle fraction math.
 * Distance - Calculate the distance between two objects.
 * Moving at an angle - Use the trig functions to decide how much to modify an (x, y) coordinate pair based on the character's speed and the angle they're currently heading.
+* Binary Math
+* Derivatives and Integrals (note to self: find my old numerical analysis textbook)
+
+
+## Language/Conversions
+
+* Text <-> Morse Code converter
+* Text <-> Braile converter
+* Caesar ciphers, other ciphers
+* Text <-> Binary
 
 ## Silly
 
