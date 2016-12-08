@@ -33,10 +33,10 @@ Iterate through every element of the array...
 
 **Translation:**
 
-for ( int i = 0; i < arraySize; i++ )
-{
-    myArray[i].DoSomething();
-}
+    for ( int i = 0; i < arraySize; i++ )
+    {
+        myArray[i].DoSomething();
+    }
 
 ---
 
