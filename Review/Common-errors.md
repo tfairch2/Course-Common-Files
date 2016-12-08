@@ -1,5 +1,25 @@
 # Common programming errors
 
+## Backwards assignment
+
+Let's say we have two variables: number, and newNumber. We want to assign the variable number, the value from newNumber.
+
+A common mistake is this:
+
+        newNumber = number;
+               
+This actually does the *opposite* - it assigns the variable newNumber the value of the variable number.
+
+The correct way is this:
+
+        number = newNumber;
+        
+The LHS (Left-hand side) of the = sign should be the *variable having its value changed*.
+
+The RHS (right-hand side) of the = sign is the *value* being assigned.
+
+---
+
 ## It can't be both...
 
 When using an if statement with multiple sub-expressions, it can be easy to mix up when to use && and when to use ||.
