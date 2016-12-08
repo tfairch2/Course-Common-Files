@@ -64,3 +64,29 @@ is not being assigned to main's **sum**, either. In order to do that, our code w
     int sum = AddTwo( a, b );
 
 If you do not assign the function to a variable, then its return value will be lost forever.
+
+## Outputting when you should be returning
+
+Sometimes, the requirements ask you to **return** some data from a function. A common error is to actually just output that data, rather than returning it. Make sure you understand the instructions!
+
+**Example:**
+
+Create a function that sums together three values and returns the result. It works with doubles.
+
+**Yes:**
+
+    double Sum( double a, double b, double c )
+    {
+      double sum = a + b + c;
+      return sum;
+    }
+
+
+**No:**
+
+    double Sum( double a, double b, double c )
+    {
+      double sum = a + b + c;
+      System.out.println( sum );
+    }
+
