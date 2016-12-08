@@ -1,5 +1,68 @@
 # Common programming errors
 
+## It can't be both...
+
+When using an if statement with multiple sub-expressions, it can be easy to mix up when to use && and when to use ||.
+
+**Example:**
+
+        if ( choice != "y" || choice != "n" )
+        {
+            cout << "Invalid choice!" << endl;
+        }
+        
+What's wrong with the code above?
+
+Let's look at the sub-expressions...:
+
+<table>
+    <tr>
+    <th>Value of choice</th>
+    <th>choice != "y"?</th>
+    <th>choice != "n"?</th>
+    </tr>
+    
+    <tr>
+    <td>y</td>
+    <td>false</td>
+    <td>true</td>
+    </tr>
+    
+    <tr>
+    <td>n</td>
+    <td>true</td>
+    <td>false</td>
+    </tr>
+    
+    <tr>
+    <td>abcd</td>
+    <td>true</td>
+    <td>true</td>
+    </tr>
+</table>
+
+In this case, using an **OR** operator says that, if at least one of the sub-expressions is true,
+then execute the internal code.
+
+If the user selects "y", then the user has NOT selected "n", so it still displays *"Invalid choice!"*.
+
+The proper way to check would be:
+
+        if ( choice != "y" && choice != "n" )
+        {
+            // It is neither "y" nor "n".
+            cout << "Invalid choice!" << endl;
+        }
+        
+or:
+
+        if ( ! ( choice == "y" || choice == "n" ) )
+        {
+            // It is neither "y" nor "n".
+            cout << "Invalid choice!" << endl;
+        }
+
+
 ## Not understanding scope
 
 A common error is to assume that two variables are the same as long as their name is the same. 
