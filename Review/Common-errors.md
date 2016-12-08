@@ -1,6 +1,8 @@
 # Common programming errors
 
-## Backwards assignment
+## Basics
+
+### Backwards assignment
 
 Let's say we have two variables: number, and newNumber. We want to assign the variable number, the value from newNumber.
 
@@ -18,9 +20,99 @@ The LHS (Left-hand side) of the = sign should be the *variable having its value 
 
 The RHS (right-hand side) of the = sign is the *value* being assigned.
 
+--- 
+
+## If statements
+
+### Else is a catch-all
+
+An if statement is of this form:
+
+        if ( conditionA )
+        {
+                // ...
+        }
+        else if ( condition B )
+        {
+                // ...
+        }
+        else
+        {
+                // ...
+        }
+
+The **else** statement is a catch-all, when the if statement and none of the else-if statements are triggered. **else does not have parenthesis or a condition.**
+
 ---
 
-## It can't be both...
+### Bad semi-colons
+
+If statements, while loops, as in general any line of code that **contains other code** does not end with a semi-colon.
+
+When I say contains other code, I mean uses curly braces { } to denote code within it.
+
+        if ( a )
+        {
+                // I'm inside the if statement!
+        }
+        
+        while ( b )
+        {
+                // I'm inside the while loop!
+        }
+        
+        void Blob()
+        {
+                // I'm inside the Blob function!
+        }
+        
+These statements **do not end with semicolons.**
+
+If you put a semi-colon at the end, your program might build, but its logic will not be right.  
+
+When you write this:
+
+        if ( age < 18 ) ; // bad semi-colon
+                System.out.println( "No voting" );
+               
+what your code roughly translates to is this:
+
+        if ( age < 18 )
+        {
+                ;
+        }
+        
+        System.out.println( "No voting" );
+        
+Meaning that, no matter what the value of *age* is, the "No voting" message will be displayed no matter what - because if *age* is less than 18, then it only executes that semi-colon.
+
+---
+
+### When you're comparing if two items are equal, your equal sign needs a sequel
+
+Wrong:
+
+        if ( a = b )
+        {
+                // stuff
+        }
+
+Right:
+
+        if ( a == b )
+        {
+                // stuff
+        }
+        
+A single equal sign is *only* used for *assignment statements* (in C++ and Java).
+
+Double-equal sign is the operator that compares if two items are equivalent.
+
+
+
+---
+
+### It can't be both...
 
 When using an if statement with multiple sub-expressions, it can be easy to mix up when to use && and when to use ||.
 
@@ -85,7 +177,9 @@ or:
 
 ---
 
-## Not understanding scope
+## Scope
+
+### Same name, different functions
 
 A common error is to assume that two variables are the same as long as their name is the same. 
 This is not the case! Names can be reused across the program.
@@ -114,6 +208,8 @@ In this case, there is a method called AddTwo that assigns a value to a variable
 However, this is not the same variable as the main() function's **sum**. They are totally separate!
 So in this case, the program won't build (in Java) because main()'s sum was never assigned a value,
 but we're trying to output its value with System.out.println.
+
+### Redeclaring a class' member variable within a class
 
 **Example:**
 
@@ -173,7 +269,7 @@ not some random local variable.
 
 ---
 
-## Not saving a return value
+### Not saving a return value
 
 Functions that have a return type will return data. This data needs to go somewhere.
 
@@ -210,7 +306,35 @@ If you do not assign the function to a variable, then its return value will be l
 
 ---
 
-## Outputting when you should be returning
+## Arrays
+
+### Going outside the bounds of an array
+
+If you have an array of size 5...
+
+        int myNumbers[5];
+        
+then the valid indices are 0, 1, 2, 3, and 4. **5 is not a valid index in C++ / Java**.
+
+Your array has 5 items, so you still have 5 items between 0 and 4, and the item at index 5 would actually be the *6th* item.
+
+In general terms, *if your array is of size n, then the valid indices for the array are [0] through [n-1].*
+
+It is common to go outside the bounds of an array, especially when trying to iterate over everything in a for loop:
+
+        for ( int i = 0; i <= arrSize; i++ )
+        {
+                // This is going to crash when i = arrSize!
+                cout << arr[ i ] << endl;
+        }
+        
+Make sure you're never accessing that *nth* element!
+
+---
+
+## Specifications
+
+### Outputting when you should be returning
 
 Sometimes, the requirements ask you to **return** some data from a function. A common error is to actually just output that data, rather than returning it. Make sure you understand the instructions!
 
