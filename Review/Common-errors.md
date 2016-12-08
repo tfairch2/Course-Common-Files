@@ -95,6 +95,62 @@ However, this is not the same variable as the main() function's **sum**. They ar
 So in this case, the program won't build (in Java) because main()'s sum was never assigned a value,
 but we're trying to output its value with System.out.println.
 
+**Example:**
+
+Another common error along the same lines is to declare a private member variable within a class,
+and then turn around and declare the *same variable* inside of one of the methods:
+
+        class Building
+        {
+                Room[] rooms;
+                
+                void Setup()
+                {
+                        Room[] rooms = new Room[10]; // ERROR!
+                        for ( int i = 0; i < rooms.length; i++ )
+                        {
+                                rooms[i] = new Room();
+                        }
+                }
+                
+                Room GetRoom( int index )
+                {
+                        return rooms[i];
+                }
+        };
+        
+The problem with this code is that the Building's **rooms** variable is *never initialized!*. 
+Within the Setup() function,
+a *different* **rooms** variable is declared and initialized.
+This does not carry over to the **rooms** variable declared just beneath **class Building**.
+
+In other words: There are two totally different variables named *rooms*.
+One is *local to the Building object*, and one is *local to the Setup function*.
+
+The correct way to initialize this code would be:
+
+        class Building
+        {
+                Room[] rooms;
+                
+                void Setup()
+                {
+                        rooms = new Room[10]; // NOT REDECLARING!!
+                        for ( int i = 0; i < rooms.length; i++ )
+                        {
+                                rooms[i] = new Room();
+                        }
+                }
+                
+                Room GetRoom( int index )
+                {
+                        return rooms[i];
+                }
+        };
+
+So that the Setup() function now *actually initializes the Building's room array*,
+not some random local variable.
+
 ---
 
 ## Not saving a return value
