@@ -7,7 +7,24 @@ and the kind of code that I'm expecting.
 
 ---
 
-## Function specification
+## for Loop
+
+**Example:**
+
+Write a for loop that begins at 5 (inclusive) and ends at 20 (exclusive), incrementing by 5 each time.
+Within the loop, display the value of the counter variable.
+
+**Translation:**
+
+    for ( int i = 5; i < 20; i += 5 )
+    {
+      System.out.println( i );
+    }
+
+
+---
+
+## Function
 
 **Example:**
 
@@ -22,10 +39,10 @@ Within the function, calculate the perimeter (2 x width + 2 x length) and return
 * Parameters: double width, double length
 * Return type: double
 
-double GetPerimeter( double width, double length )
-{
-  return 2 * width + 2 * length;
-}
+    double GetPerimeter( double width, double length )
+    {
+      return 2 * width + 2 * length;
+    }
 
 ---
 
