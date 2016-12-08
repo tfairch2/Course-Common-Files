@@ -21,6 +21,22 @@ Within the loop, display the value of the counter variable.
       System.out.println( i );
     }
 
+---
+
+## Iterate
+
+**Example:**
+
+Iterate through every element of the array...
+
+... do something to each element of the array ...
+
+**Translation:**
+
+for ( int i = 0; i < arraySize; i++ )
+{
+    myArray[i].DoSomething();
+}
 
 ---
 
