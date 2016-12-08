@@ -7,7 +7,7 @@ and the kind of code that I'm expecting.
 
 ---
 
-## for Loop
+## For Loop
 
 **Example:**
 
