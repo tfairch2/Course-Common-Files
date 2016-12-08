@@ -63,6 +63,8 @@ or:
         }
 
 
+---
+
 ## Not understanding scope
 
 A common error is to assume that two variables are the same as long as their name is the same. 
@@ -92,6 +94,8 @@ In this case, there is a method called AddTwo that assigns a value to a variable
 However, this is not the same variable as the main() function's **sum**. They are totally separate!
 So in this case, the program won't build (in Java) because main()'s sum was never assigned a value,
 but we're trying to output its value with System.out.println.
+
+---
 
 ## Not saving a return value
 
@@ -127,6 +131,8 @@ is not being assigned to main's **sum**, either. In order to do that, our code w
     int sum = AddTwo( a, b );
 
 If you do not assign the function to a variable, then its return value will be lost forever.
+
+---
 
 ## Outputting when you should be returning
 
