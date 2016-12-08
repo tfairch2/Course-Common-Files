@@ -39,10 +39,11 @@ Within the function, calculate the perimeter (2 x width + 2 x length) and return
 * Parameters: double width, double length
 * Return type: double
 
-    double GetPerimeter( double width, double length )
-    {
-      return 2 * width + 2 * length;
-    }
+
+        double GetPerimeter( double width, double length )
+        {
+          return 2 * width + 2 * length;
+        }
 
 ---
 
