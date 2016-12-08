@@ -1,0 +1,66 @@
+# Common programming errors
+
+## Not understanding scope
+
+A common error is to assume that two variables are the same as long as their name is the same. 
+This is not the case! Names can be reused across the program.
+
+A variable declared **within a method** only exists within that method.
+Other methods will not have access to that variable.
+
+**Example:**
+
+    int AddTwo( int a, int b )
+    {
+      int sum = a + b;
+      return sum;
+    }
+
+    void main()
+    {
+      int a = 5, b = 10;
+      int sum;
+
+      // Invalid! sum has not been assigned a value.
+      System.out.println( "Sum: " + sum );
+    }
+
+In this case, there is a method called AddTwo that assigns a value to a variable named **sum**. 
+However, this is not the same variable as the main() function's **sum**. They are totally separate!
+So in this case, the program won't build (in Java) because main()'s sum was never assigned a value,
+but we're trying to output its value with System.out.println.
+
+## Not saving a return value
+
+Functions that have a return type will return data. This data needs to go somewhere.
+
+It is a common error to call such a function, but not assign its return value to any variables.
+
+**Example:**
+
+    int AddTwo( int a, int b )
+    {
+      int sum = a + b;
+      return sum;
+    }
+
+    void main()
+    {
+      int a = 5, b = 10;
+      int sum;
+      AddTwo( a, b ); // Problem! Not storing the return value
+
+      // Invalid! sum has not been assigned a value.
+      System.out.println( "Sum: " + sum );
+    }
+
+In this case, AddTwo is being called. It is going to add 5 and 10 together, and return 15.
+However, 15 is not being stored anywhere once the function returns to main().
+
+Again, AddTwo's **sum** and main's **sum** are totally different variables, so the value of 15
+is not being assigned to main's **sum**, either. In order to do that, our code would have to look like:
+
+    // Pass in a and b as input, and store the output in sum
+    int sum = AddTwo( a, b );
+
+If you do not assign the function to a variable, then its return value will be lost forever.
