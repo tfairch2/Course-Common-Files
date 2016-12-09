@@ -63,6 +63,14 @@ Within the function, calculate the perimeter (2 x width + 2 x length) and return
 
 ---
 
+## At position...
+
+When I say "The element at position 5", I'm referring to index 5 of the array.
+
+    arr[5] = "asdf";
+
+---
+
 ## Class with private members and getters and setters
 
 A **Getter** (or accessor) method is a function that corresponds to one private member variable of the class.
