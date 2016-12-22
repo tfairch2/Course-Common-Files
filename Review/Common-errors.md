@@ -1,6 +1,6 @@
 # Common programming errors
 
-## Basics
+## Variables
 
 ### Backwards assignment
 
@@ -43,8 +43,6 @@ An if statement is of this form:
 
 The **else** statement is a catch-all, when the if statement and none of the else-if statements are triggered. **else does not have parenthesis or a condition.**
 
----
-
 ### Bad semi-colons
 
 If statements, while loops, as in general any line of code that **contains other code** does not end with a semi-colon.
@@ -86,8 +84,6 @@ what your code roughly translates to is this:
         
 Meaning that, no matter what the value of *age* is, the "No voting" message will be displayed no matter what - because if *age* is less than 18, then it only executes that semi-colon.
 
----
-
 ### When you're comparing if two items are equal, your equal sign needs a sequel
 
 Wrong:
@@ -107,10 +103,6 @@ Right:
 A single equal sign is *only* used for *assignment statements* (in C++ and Java).
 
 Double-equal sign is the operator that compares if two items are equivalent.
-
-
-
----
 
 ### It can't be both...
 
@@ -177,7 +169,7 @@ or:
 
 ---
 
-## Scope
+## Functions
 
 ### Same name, different functions
 
@@ -208,6 +200,45 @@ In this case, there is a method called AddTwo that assigns a value to a variable
 However, this is not the same variable as the main() function's **sum**. They are totally separate!
 So in this case, the program won't build (in Java) because main()'s sum was never assigned a value,
 but we're trying to output its value with System.out.println.
+
+### Not saving a return value
+
+Functions that have a return type will return data. This data needs to go somewhere.
+
+It is a common error to call such a function, but not assign its return value to any variables.
+
+**Example:**
+
+    int AddTwo( int a, int b )
+    {
+      int sum = a + b;
+      return sum;
+    }
+
+    void main()
+    {
+      int a = 5, b = 10;
+      int sum;
+      AddTwo( a, b ); // Problem! Not storing the return value
+
+      // Invalid! sum has not been assigned a value.
+      System.out.println( "Sum: " + sum );
+    }
+
+In this case, AddTwo is being called. It is going to add 5 and 10 together, and return 15.
+However, 15 is not being stored anywhere once the function returns to main().
+
+Again, AddTwo's **sum** and main's **sum** are totally different variables, so the value of 15
+is not being assigned to main's **sum**, either. In order to do that, our code would have to look like:
+
+    // Pass in a and b as input, and store the output in sum
+    int sum = AddTwo( a, b );
+
+If you do not assign the function to a variable, then its return value will be lost forever.
+
+---
+
+## Classes
 
 ### Redeclaring a class' member variable within a class
 
@@ -266,43 +297,6 @@ The correct way to initialize this code would be:
 
 So that the Setup() function now *actually initializes the Building's room array*,
 not some random local variable.
-
----
-
-### Not saving a return value
-
-Functions that have a return type will return data. This data needs to go somewhere.
-
-It is a common error to call such a function, but not assign its return value to any variables.
-
-**Example:**
-
-    int AddTwo( int a, int b )
-    {
-      int sum = a + b;
-      return sum;
-    }
-
-    void main()
-    {
-      int a = 5, b = 10;
-      int sum;
-      AddTwo( a, b ); // Problem! Not storing the return value
-
-      // Invalid! sum has not been assigned a value.
-      System.out.println( "Sum: " + sum );
-    }
-
-In this case, AddTwo is being called. It is going to add 5 and 10 together, and return 15.
-However, 15 is not being stored anywhere once the function returns to main().
-
-Again, AddTwo's **sum** and main's **sum** are totally different variables, so the value of 15
-is not being assigned to main's **sum**, either. In order to do that, our code would have to look like:
-
-    // Pass in a and b as input, and store the output in sum
-    int sum = AddTwo( a, b );
-
-If you do not assign the function to a variable, then its return value will be lost forever.
 
 ---
 
