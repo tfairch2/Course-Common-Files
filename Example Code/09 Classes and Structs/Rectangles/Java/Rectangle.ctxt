@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=newWidth\ newHeight
+comment0.target=void\ Setup(int,\ int)
+comment1.params=
+comment1.target=int\ GetArea()
+comment2.params=
+comment2.target=int\ GetPerimeter()
+comment3.params=
+comment3.target=boolean\ IsSquare()
+comment4.params=
+comment4.target=int\ GetWidth()
+comment5.params=
+comment5.target=int\ GetHeight()
+numComments=6
