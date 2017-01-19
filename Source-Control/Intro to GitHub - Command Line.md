@@ -10,6 +10,8 @@ to the basic functionality.
 
 ## Setup
 
+You will need to download Git from [git-scm.com](https://git-scm.com/) and install it.
+
 From the command line, you will want to set up a few things in git, so that
 your commits have your name and email.
 
@@ -106,5 +108,114 @@ Before you pull changes from the repository, you should commit any pending chang
 	git pull
 	
 then, it may merge the changes
+
+---
+
+# Tutorial - Creating a GitHub repository and using Git
+
+## Creating the repository on GitHub
+
+From the homepage of [GitHub](https://github.com/), make sure you're logged in.
+
+Then, under the **Your repositories** section, there is a green **New repository** button.
+
+![New repository button](images/cl-githubweb.png)
+
+From the **Create a new repository page**, give your repository a name.
+
+Set its accessibility to *public* if you're using a free GitHub account.
+
+Click on **Create repository**.
+
+![Creating a new repository](images/cl-newrepo.png)
+
+If you didn't select *"Initialize this repository with a README"*, your new repository page will look like this:
+
+![Blank repository](images/cl-newrepopage.png)
+
+## Cloning the repository onto your local machine
+
+Make sure your **HTTPS** button is selected, and copy the URL next to it.
+
+For example, the repository URL here is:
+
+	https://github.com/RachelJMorris/CS-250-Projects.git
+
+(but don't copy this one!)
+
+Back on your computer, open up the File Explorer and navigate to a folder where you will want to store your repository.
+
+Right-click in the empty space. If **Git Bash** is an option, select it. If it is not available, then **SHIFT+Right Click** the empty space, and select **Open command window here**.
+
+![Right-click menu](images/cl-rightclick.png)
+
+Type in
+
+	git clone
+
+and then paste in your URL by right-clicking the console window.
+
+![git clone command](images/cl-clone.png)
+
+Hit **enter** and your repository will be pulled down from the server...
+
+![after the clone](images/cl-cloned.png)
+
+Your repository is now a folder on your hard drive. You can add files and folders within this repository for Git to keep track of for you.
+
+## Adding, committing, and pushing changes
+
+Once you've added files to your repository folder, you may want to take a "snapshot" of your changes so you can go back to them later if you need to.
+
+In the repository directory, right-click the blank space and open either Git Bash, or the terminal.
+
+![open terminal](images/cl-openterminal.png)
+
+To add a single file at a time to your changeset, use:
+
+	git add (FILENAME)
+
+You can also add multiple files at once:
+
+![adding multiple files](images/cl-multiplefile.png)
+
+As a shortcut, if you just want to add *all files in this directory, and all subdirectories*, you can use:
+
+	git add .
+
+After your **add**, check the status of your files with
+
+	git status
+
+![git status](images/cl-gitstatus.png)
+
+Green files are the files that will be part of your commit.
+
+After you've added all the files that have changed that you want to track, it is time to **commit**. Do the following:
+
+	git commit -m "Description of changes"
+
+![git commit](images/cl-gitcommit.png)
+
+Finally, to push your commit(s) to the server, you will use:
+
+	git push -u origin master
+
+![git push](images/cl-gitpush.png)
+
+## Pulling down changes
+
+If you're working on multiple computers, and you need to pull down your latest files, you will need to use the **git pull** command.
+
+However, if there are files that have been **changed** but not **committed**, git will complain when you try to execute *git pull*.
+
+The best way to get latest changes is to follow:
+
+1. Add all files that have been changed
+2. Commit your changes
+3. Use **git pull**
+4. (Git will merge) 
+
+![steps to pull](images/cl-pull.png)
 
 
